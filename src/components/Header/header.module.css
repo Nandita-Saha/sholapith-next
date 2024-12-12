@@ -1,4 +1,71 @@
-.header{
-    padding: 20px 0;
+.header {
+    /* padding: 20px 0; */
     background-color: var(--primary-color);
+}
+
+
+/* header hamburger style  */
+
+.hamburger {
+    position: relative;
+    height: 2px;
+    width: 30px;
+    background: transparent;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger span::before {
+    top: -7px;
+}
+
+.hamburger span::after {
+    bottom: -7px;
+}
+
+.hamburger.cross span {
+    background-color: transparent;
+}
+
+.hamburger.cross span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.hamburger.cross span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.phoneNumber {
+    margin-left: 15px;
+    border-left: 1px solid #ffffff;
+    padding-left: 20px;
+}
+
+.phoneNumber a {
+    color: #f58c37;
+    text-decoration: none;
+}
+
+.phoneNumber a img {
+    width: 14px;
+    margin-right: 5px;
 }
