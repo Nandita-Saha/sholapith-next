@@ -45,28 +45,38 @@ body {
 
     h1 {
         font-size: 59px;
+        line-height: 65px;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h2 {
         font-size: 50px;
+        line-height: 55px;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h3 {
         font-size: 40px;
+        line-height: 45px;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h4 {
         font-size: 35px;
+        line-height: 40px;
     }
 
     h5 {
         font-size: 26px;
+        line-height: 30px;
+    }
+
+    h6 {
+        font-size: 20px;
+        line-height: 25px;
     }
 
     .white-orange-text {

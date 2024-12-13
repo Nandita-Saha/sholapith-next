@@ -1,7 +1,9 @@
 .footer {
     background-color: #ededed;
-    padding-top: 12%;
-    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* padding-top: 12%; */
+    /* position: relative; */
     z-index: 2;
 }
 
@@ -30,8 +32,9 @@
 
 .foooterHeading {
     color: #0631a7;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    /* padding-left: 2rem; */
 }
 
 .addressList li {
@@ -100,7 +103,7 @@
 }
 
 .footerQuickLink li {
-    margin-bottom: 1rem;
+    margin-bottom: 8px;
     list-style: none;
 }
 
@@ -122,10 +125,10 @@
 
 .socialLinks li {
     list-style: none;
-    margin: 0 10px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    margin: 0 7px;
+    /* height: 50px; */
+    /* width: 50px; */
+    /* border-radius: 50%; */
 }
 
 .socialLinks li a {
@@ -133,17 +136,17 @@
 }
 
 .biswaBanglaLogo {
-    height: 200px;
-    width: 100px;
-    margin: 0 auto;
-    display: block;
+    /* height: 200px; */
+    /* width: 100px; */
+    /* margin: 0 auto; */
+    /* display: block; */
 }
 
 .copyright {
     margin: 0 auto;
-    margin-top: 2%;
+    /* margin-top: 2%; */
     margin-bottom: 16px;
-    width: 95%;
+    /* width: 95%; */
     padding: 8px 0;
     background-color: #0631a7;
     border-radius: 30px;
@@ -153,4 +156,19 @@
     color: #fff;
     margin-bottom: 0;
     font-size: 12px;
+    line-height: 20px;
+}
+
+@media (max-width: 1024px){
+    .footer a, .footer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px){
+    .socialLinks {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
 }
