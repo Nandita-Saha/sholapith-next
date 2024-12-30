@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <main className={poppins.className}>
       <Header />
-      <div className="">{children}</div>
+      <div className="mt-[60px]">{children}</div>
       <Footer />
     </main>
   );

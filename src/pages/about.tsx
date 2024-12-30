@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <div className="baseContainer">
       <h1>Welcome to Our About page!</h1>
       <p>Discover amazing content here.</p>
     </div>

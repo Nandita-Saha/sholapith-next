@@ -72,7 +72,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            <Image className={`mt-5 ml-5 w-1/2 lg:h-auto lg:w-auto ${styles.biswaBanglaLogo}`} height="300" width="300" src="/assets/images/webp/biswa-bangla-logo.webp" alt="" />
+            <Image className={`mt-5 ml-5  lg:h-auto lg:w-auto ${styles.biswaBanglaLogo}`} height="500" width="500" src="/assets/images/webp/biswa-bangla-logo.webp" alt="" />
           </div>
         </div>
       </div>
