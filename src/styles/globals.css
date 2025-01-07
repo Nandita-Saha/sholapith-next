@@ -9,6 +9,7 @@
     font-style: normal;
     font-weight: 600;
 }
+
 @font-face {
     font-family: Vinteage Glamour;
     src: url("/assets/fonts/vintageglamouritalic.woff2") format("woff2"),
@@ -23,7 +24,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-:root{    
+:root {
     --primary-color: #0631a7;
     --secondary-color: #f58c37;
     --white: #fff;
@@ -115,7 +116,14 @@ body {
     }
 
     /* common styles of homepage */
-    .banner,.culture,.top-picks,.events,.products,.video,.testimonials,.customized{
+    .banner,
+    .culture,
+    .top-picks,
+    .events,
+    .products,
+    .video,
+    .testimonials,
+    .customized {
         padding: 3rem 0;
     }
 
@@ -133,38 +141,96 @@ body {
         justify-content: center;
         text-decoration: none;
     }
-    
+
     /* top-picks section */
-    .top-picks{
-        background: var(--offwhite);       
+    .top-picks {
+        background: var(--offwhite);
     }
-    
+
     /* events section */
 
-    .events{
-       background: var(--secondary-color); 
-       color: var(--white);
+    .events {
+        background: var(--secondary-color);
+        color: var(--white);
     }
 
-    
+
     /* video section */
 
-    .video{
-       /* background: var(--primary-color); 
+    .video {
+        /* background: var(--primary-color); 
        color: var(--white); */
     }
 
     /* testimonial section */
 
-    .testimonials{
-       background: var(--primary-color); 
-       color: var(--white);
+    .testimonials {
+        background: var(--primary-color);
+        color: var(--white);
     }
 
     /* customised section */
-   
 
-    @media(max-width:1600px){
 
+    /* about us section  */
+
+
+    .product-count {
+        background-color: #0631a7;
+        padding: 40px 16px;
+        border: 5px solid #fff;
+        border-radius: 65px;
+        height: 14rem;
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    .product-count>p {
+        margin-bottom: 0 !important;
+        font-family: Vinteage Glamour;
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .product-count>p span {
+        display: block;
+        font-size: 50px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .abtus-sec2 .product-count-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 0;
+    }
+
+    .abtus-sec2 .product-count-list li {
+        list-style: none;
+    }
+
+    .abtus-sec2 .product-count-list li>.product-count {
+        height: 20rem;
+        width: 13rem;
+        border-radius: 100px;
+        text-align: center;
+        transition: 0.3s ease-in;
+    }
+
+    .abtus-sec2 .product-count-list li>.product-count>p {
+        font-size: 26px;
+    }
+
+    .abtus-sec2 .product-count-list li:not(:nth-of-type(2)) .product-count {
+        background-color: #ededed;
+    }
+
+    .abtus-sec2 .product-count-list li:not(:nth-of-type(2)) .product-count>p {
+        color: #0631a7;
+    }
+
+    @media(max-width:1600px) {}
 }
