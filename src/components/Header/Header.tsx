@@ -30,26 +30,26 @@ export default function Header() {
   return (
 
     <>
-      <div className={`${styles.header} absolute top-0 z-50 px-4 py-2 flex w-full items-center justify-between`}>
+      <div className={`${styles.header} absolute top-0 z-50 px-4 py-3 flex w-full items-center justify-between`}>
         <Link href="/">
-          <Image width="200" height="200" className="w-32 md:w-40 lg:w-44" src="/assets/images/headers/logo.svg" alt="logo" />
+          <Image width="200" height="200" className="w-52 md:w-60 lg:w-72" src="/assets/images/headers/logo.svg" alt="logo" />
         </Link>
 
         <ul className="hidden lg:flex items-center justify-center">
           <li className="text-center mx-5">
-            <Link className="text-sm md:text-sm text-white" href="/about">About Us</Link>
+            <Link className=" text-white" href="/about">About Us</Link>
           </li>
           <li className="text-center mx-5">
-            <Link className="text-sm md:text-sm text-white" href="/how-we-work">How We Work</Link>
+            <Link className=" text-white" href="/how-we-work">How We Work</Link>
           </li>
           <li className="text-center mx-5">
-            <Link className="text-sm md:text-sm text-white" href="/products">Our Products</Link>
+            <Link className=" text-white" href="/products">Our Products</Link>
           </li>
           <li className="text-center mx-5">
-            <Link className="text-sm md:text-sm text-white" href="/contact">Contact Us</Link>
+            <Link className=" text-white" href="/contact">Contact Us</Link>
           </li>
           <li className={`${styles.phoneNumber}`}>
-            <Link href="tel:9775600370" className="text-sm md:text-sm flex items-center">
+            <Link href="tel:9775600370" className=" flex items-center">
               <Image src="/assets/images/headers/phone-icon.svg" width="100" height="100" className="w-6 h-6" alt="" /> +91 9775600370
             </Link>
           </li>
@@ -69,16 +69,16 @@ export default function Header() {
       >
         <ul className="mt-[100px]">
           <li className="text-center my-2">
-            <Link className="text-lg lg:text-lg text-white hover:text-[#6cd4da]" href="/about" onClick={() => toggleMenu("/about")}>About Us</Link>
+            <Link className="text-white hover:text-[#6cd4da]" href="/about" onClick={() => toggleMenu("/about")}>About Us</Link>
           </li>
           <li className="text-center my-2">
-            <Link className="text-lg lg:text-lg text-white hover:text-[#6cd4da]" href="/how-we-work" onClick={() => toggleMenu("/how-we-work")}>How We Work</Link>
+            <Link className="text-white hover:text-[#6cd4da]" href="/how-we-work" onClick={() => toggleMenu("/how-we-work")}>How We Work</Link>
           </li>
           <li className="text-center my-2">
-            <Link className="text-lg lg:text-lg text-white hover:text-[#6cd4da]" href="/products" onClick={() => toggleMenu("/products")}>Our Products</Link>
+            <Link className="text-white hover:text-[#6cd4da]" href="/products" onClick={() => toggleMenu("/products")}>Our Products</Link>
           </li>
           <li className="text-center my-2">
-            <Link className="text-lg lg:text-lg text-white hover:text-[#6cd4da]" href="/contact" onClick={() => toggleMenu("/contact")}>Contact Us</Link>
+            <Link className="text-white hover:text-[#6cd4da]" href="/contact" onClick={() => toggleMenu("/contact")}>Contact Us</Link>
           </li>
         </ul>
       </div>

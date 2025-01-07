@@ -1,18 +1,19 @@
 // pages/index.tsx
 import React from 'react';
 import Link from 'next/link';
+import styles from '../styles/about.module.css'
 
 export default function About() {
   return (
     <>
-      <section className="abtus-sec1">
+      <section className="abtusSec1">
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
             <div className='md:col-span-1'>
 
             </div>
             <div className='md:col-span-1'>
-              <h2 className="black-blue-text">Enliven Your Ethnic Roots with <span>Wholesome</span> Craftsmanship</h2>
+              <h2 className="blackBlueText">Enliven Your Ethnic Roots with <span>Wholesome</span> Craftsmanship</h2>
               <p>
                 Headed by the impressive experience of Smt. Nupur Saha and her foundation Nupur Silpalay, Sholapith found its online establishment as its official online website. Sholapith defines the profound love and passion of Mrs. Saha for the Shola handicrafts, and describes her 25 years of rich experience aesthetically.
               </p>
@@ -33,21 +34,21 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className="abtus-sec2">
+      <section className="abtusSec2">
         <div className="baseContainer">
-          <ul className="product-count-list">
+          <ul className={styles.productCountList}>
             <li>
-              <div className="product-count">
+              <div className="productCount">
                 <p> <span>300+</span>Clients</p>
               </div>
             </li>
             <li>
-              <div className="product-count">
+              <div className="productCount">
                 <p> <span>2k+</span>Products</p>
               </div>
             </li>
             <li>
-              <div className="product-count">
+              <div className="productCount">
                 <p> <span>15</span>Categories</p>
               </div>
             </li>
@@ -58,11 +59,11 @@ export default function About() {
           <p>
             With a deep understanding of the rich cultural heritage we hold, we have committed ourselves in providing our customers with exactly what they are looking for. We have always aimed at providing a piece of our heart with every gift item we design.
           </p>
-          <Link href="" className='blue-btn'>Get in touch</Link>
+          <Link href="" className='blueBtn'>Get in touch</Link>
         </div>
       </section>
 
-      <section className='abtus-sec3'>
+      <section className='abtusSec3'>
         <div className='baseContainer'>
           <h2>OUR MISSION</h2>
           <p>
@@ -74,7 +75,7 @@ export default function About() {
           <p>
             By establishing Sholapith in the world of the internet, we aim at:
           </p>
-          <ul className="abtus-sec3-list">
+          <ul className="abtusSec3-list">
             <li>
               <span className="list-no">01.</span>
               <p>Making a strong online presence and reaching out to far-reaching audience through social
@@ -102,7 +103,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="abtus-sec4">
+      <section className="abtusSec4">
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
             <div className='md:col-span-1'>
@@ -124,7 +125,7 @@ export default function About() {
         </div>
       </section>
 
-      <section className="abtus-sec5">
+      <section className="abtusSec5">
         <div className="baseContainer">
           <h2>Aesthetic Shola Art Customized to Your Needs</h2>
           <p>
@@ -133,7 +134,7 @@ export default function About() {
           <p>
             All our products speak at length about quality, craftsmanship and finesse and assures to bring in a bit of West Bengal heritage at your doorsteps. We are passionate and sincere, and deliver what we promise.
           </p>
-          <Link className="blue-btn" href="">Get in touch</Link>
+          <Link className="blueBtn" href="">Get in touch</Link>
         </div>
       </section>
     </>

@@ -18,6 +18,10 @@
     font-weight: 600;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -39,102 +43,91 @@ body {
         @apply mx-auto 2xl:max-w-screen-xl xl:max-w-screen-lg lg:max-w-screen-lg md:max-w-screen-md max-w-full px-4 md:px-0;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 24px;
+    p,
+    a {
+        font-size: 1.6rem;
+        line-height: 1.5
     }
 
     h1 {
-        font-size: 50px;
-        line-height: 55px;
+        font-size: 3.8rem;
+        line-height: 1.5;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h2 {
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 3.5rem;
+        line-height: 1.5;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h3 {
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 3rem;
+        line-height: 1.5;
         margin-bottom: 1rem;
         font-family: Vinteage Glamour;
     }
 
     h4 {
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 2.5rem;
+        line-height: 1.5;
     }
 
     h5 {
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 2rem;
+        line-height: 1.5;
     }
 
     h6 {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 1.8rem;
+        line-height: 1.5;
     }
 
-    .white-orange-text {
+    .whiteOrangeText {
         color: var(--white);
     }
 
-    .white-orange-text span {
+    .whiteOrangeText span {
         color: var(--secondary-color);
         font-weight: 600;
     }
 
-    .black-blue-text {
+    .blackBlueText {
         color: var(--black);
     }
 
-    .black-blue-text span {
+    .blackBlueText span {
         color: var(--primary-color);
         font-weight: 600;
     }
 
-    .black-orange-text {
+    .blackOrangeText {
         color: var(--black);
     }
 
-    .black-orange-text span {
+    .blackOrangeText span {
         color: var(--secondary-color);
         font-weight: 600;
     }
 
-    .show-desk {
+    .showDesk {
         display: block;
     }
 
-    .show-mob {
+    .showMob {
         display: none;
     }
 
-    /* common styles of homepage */
-    .banner,
-    .culture,
-    .top-picks,
-    .events,
-    .products,
-    .video,
-    .testimonials,
-    .customized {
-        padding: 3rem 0;
-    }
-
-    .blue-btn {
+    .blueBtn {
         background-color: #0631a7;
         color: #fff;
         border: none;
-        border-radius: 35px;
-        padding: 10px 30px;
-        font-size: 16px;
-        line-height: 20px;
+        border-radius: 3.5rem;
+        padding: 1rem 3rem;
+        font-size: 1.6rem;
+        line-height: 1.5;
         font-weight: 400;
         display: inline-flex;
         align-items: center;
@@ -142,95 +135,56 @@ body {
         text-decoration: none;
     }
 
-    /* top-picks section */
-    .top-picks {
-        background: var(--offwhite);
-    }
+    /* *************** slider style ***************  */
 
-    /* events section */
+  .mySwiper {
+    @apply mt-10
+  }
 
-    .events {
-        background: var(--secondary-color);
-        color: var(--white);
-    }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
 
+  /* .mySwiper {
+    padding: 0 14px !important;
+  } */
 
-    /* video section */
+  /* .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  } */
 
-    .video {
-        /* background: var(--primary-color); 
-       color: var(--white); */
-    }
+  .swiper-button-prev {
+    left: -6px !important;
+    z-index: 10;
+  }
 
-    /* testimonial section */
+  .swiper-button-next {
+    right: -6px !important;
+    z-index: 10;
+  }
 
-    .testimonials {
-        background: var(--primary-color);
-        color: var(--white);
-    }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    color: #fff !important;
+    font-size: 2.5rem !important;
+  }
 
-    /* customised section */
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-
-    /* about us section  */
-
-
-    .product-count {
-        background-color: #0631a7;
-        padding: 40px 16px;
-        border: 5px solid #fff;
-        border-radius: 65px;
-        height: 14rem;
-        width: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .product-count>p {
-        margin-bottom: 0 !important;
-        font-family: Vinteage Glamour;
-        color: #fff;
-        font-size: 20px;
-    }
-
-    .product-count>p span {
-        display: block;
-        font-size: 50px;
-        line-height: 60px;
-        text-align: center;
-    }
-
-    .abtus-sec2 .product-count-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-left: 0;
-    }
-
-    .abtus-sec2 .product-count-list li {
-        list-style: none;
-    }
-
-    .abtus-sec2 .product-count-list li>.product-count {
-        height: 20rem;
-        width: 13rem;
-        border-radius: 100px;
-        text-align: center;
-        transition: 0.3s ease-in;
-    }
-
-    .abtus-sec2 .product-count-list li>.product-count>p {
-        font-size: 26px;
-    }
-
-    .abtus-sec2 .product-count-list li:not(:nth-of-type(2)) .product-count {
-        background-color: #ededed;
-    }
-
-    .abtus-sec2 .product-count-list li:not(:nth-of-type(2)) .product-count>p {
-        color: #0631a7;
-    }
+  /* ************* slider style end ************ */
 
     @media(max-width:1600px) {}
 }

@@ -15,7 +15,7 @@ export default function Footer() {
           <ul className={`${styles.addressList}`}>
             <li>
               <span className={`${styles.footerIcon}`}>
-                <Image className="w-6 h-6" width="100" height="100" src="/assets/images/home/foooter-map-icon.svg" alt="" />
+                <Image className="w-10 h-10" width="100" height="100" src="/assets/images/home/foooter-map-icon.svg" alt="" />
               </span>
               <p className="address">
                 141/A, A.C.Road, Khagra, Berhampore, Murshidabad, West Bengal - 742103
@@ -23,13 +23,13 @@ export default function Footer() {
             </li>
             <li>
               <span className={`${styles.footerIcon}`}>
-                <Image className="w-6 h-6" width="100" height="100" src="/assets/images/home/foooter-phone-icon.svg" alt="" />
+                <Image className="w-10 h-10" width="100" height="100" src="/assets/images/home/foooter-phone-icon.svg" alt="" />
               </span>
               <Link href="tel:9775600370">+91 9775600370</Link>
             </li>
             <li>
               <span className={`${styles.footerIcon}`}>
-                <Image className="w-6 h-6" width="100" height="100" src="/assets/images/home/foooter-email-icon.svg" alt="" />
+                <Image className="w-10 h-10" width="100" height="100" src="/assets/images/home/foooter-email-icon.svg" alt="" />
               </span>
               <Link href="mailto:info@sholapith.com">info@sholapith.com</Link>
             </li>
@@ -42,7 +42,7 @@ export default function Footer() {
           <Image className="mx-auto block w-1/2 lg:w-auto" width="200" height="200" src="/assets/images/home/footer-text-logo.svg" alt="" />
         </div>
 
-        <div className="md:flex items-start lg:justify-start justify-between">
+        <div className="md:flex items-start lg:justify-around justify-between">
           <div className="">
             <h6 className={`${styles.foooterHeading}`}>Quick Link</h6>
             <ul className={`${styles.footerQuickLink}`}>
@@ -57,18 +57,18 @@ export default function Footer() {
             <ul className={` ${styles.socialLinks}`}>
               <li>
                 <Link href="">
-                  <Image className="h-6 w-6" height="100" width="100" src="/assets/images/home/facebook.svg" alt="facebook icon" />
+                  <Image className="h-10 w-10" height="100" width="100" src="/assets/images/home/facebook.svg" alt="facebook icon" />
                 </Link>
               </li>
               <li>
                 <Link href="">
-                  <Image className="h-6 w-6" height="100" width="100" src="/assets/images/home/youtube.svg"
+                  <Image className="h-10 w-10" height="100" width="100" src="/assets/images/home/youtube.svg"
                     alt="youtube icon" />
                 </Link>
               </li>
               <li>
                 <Link href="">
-                  <Image className="h-6 w-6" height="100" width="100" src="/assets/images/home/linkdin.svg" alt="linkedin icon" />
+                  <Image className="h-10 w-10" height="100" width="100" src="/assets/images/home/linkdin.svg" alt="linkedin icon" />
                 </Link>
               </li>
             </ul>
@@ -78,7 +78,7 @@ export default function Footer() {
       </div>
 
       <div className={`${styles.copyright}`}>
-        <p className="text-center">&#169; sholapith.com 2023. | All rights reserved. </p>
+        <p className="text-center">&#169; sholapith.com 2025. | All rights reserved. </p>
       </div>
     </div>
   )
