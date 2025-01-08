@@ -31,7 +31,7 @@ export default function Homepage() {
               <p className='mb-3'>
                 Welcome to the illustrious world of Sholapith, where tradition and culture of the shola craft take an all-new dimension under the able guidance of Mrs. Nupur Saha and her visionary project of Nupur Silpalay.
               </p>
-              <p className='mb-4'>
+              <p className='mb-10'>
                 Mesmerize your aesthetic senses with a wide variety of world-class shola handicraft and shola wood craft at the most sought-after shola handicraft store online. Discover the best shola craft of West Bengal right here, right away!
               </p>
               <Link href="" className='blueBtn'>Contact Us..</Link>
@@ -86,7 +86,7 @@ export default function Homepage() {
           <h2 className="blackBlueText">Get <span>Beautifully Customized</span> Shola Craft Work <br />
             at Your <span>Doorsteps</span> Today!</h2>
           <p className='mb-3'>At Sholapith, we promise to deliver every piece of craft and décor with equal dedication and sincerity. We are committed to customize your favourite piece of craft order; despite the numbers you order from our handicraft store online. We have tied up with the best courier partners to safely and swiftly deliver your favourite products.</p>
-          <p className='mb-4'>
+          <p className='mb-10'>
             No matter what you choose, or the quantity of the products, a single one or multiple items in one go, we will customize each of your shola handicraft with same zeal and quality at our workshop in Berhampore, West Bengal. With sheer love and passion towards our work, we assure to deliver nothing but the best-in-class shola work right at your doorsteps anywhere in India!
           </p>
           <Link className="blueBtn" href="">Get in touch</Link>
