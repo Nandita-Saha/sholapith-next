@@ -1,15 +1,18 @@
 // pages/index.tsx
 import React from 'react';
 import Link from 'next/link';
+import styles from '../styles/hiw.module.css';
 
 export default function HowWeWork() {
   return (
     <>
       <section className="hiw-sec1">
         <div className="baseContainer">
-          <h1>The Shola Craft Mechanism - Our 5 Pillars of Success</h1>
-          <p>Let us now take you through a quick tour of the prolonged process to give you a fair idea of our craft. With immense experience and utmost dedication, we not only bring out the best handicraft products, but also ensure that all our inquisitive audience are aware of this interesting trivia. Scroll down to get a quick glimpse of the process.
-          </p>
+          <div className='w-2/3 mx-auto text-center'>
+            <h1 className="blackBlueText">The Shola Craft <span>Mechanism</span> - Our 5 Pillars of <span>Success</span></h1>
+            <p className="blackOrangeText">Let us now take you through a quick tour of the <span>prolonged process</span> to give you a fair idea of our craft. With immense experience and utmost dedication, we not only bring out the best handicraft products, but also ensure that all our inquisitive audience are aware of this <span>interesting trivia.</span> Scroll down to get a quick glimpse of the process.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -101,7 +104,7 @@ export default function HowWeWork() {
           <p className="process-step blue-btn">step 05</p>
           <h2>The final delivery</h2>
           <p>
-          Once the products are secured and packaged, we ensure swiftest deliveries. We have tied up with the reputed delivery partners that vouch for the fastest deliveries without compromising on product security. So, expect us to never fail deadlines in terms of any of our deliveries!
+            Once the products are secured and packaged, we ensure swiftest deliveries. We have tied up with the reputed delivery partners that vouch for the fastest deliveries without compromising on product security. So, expect us to never fail deadlines in terms of any of our deliveries!
           </p>
           <Link className="blue-btn" href="">Get in touch</Link>
         </div>

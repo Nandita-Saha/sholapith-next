@@ -138,6 +138,7 @@ export default function About() {
           <Link className="blueBtn" href="">Get in touch</Link>
         </div>
       </section>
+    
     </>
   );
 };
