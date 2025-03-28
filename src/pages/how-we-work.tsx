@@ -6,23 +6,23 @@ import styles from '../styles/hiw.module.css';
 export default function HowWeWork() {
   return (
     <>
-      <section className="hiw-sec1">
+      <section className={styles.hiwSec1}>
         <div className="baseContainer">
           <div className='w-2/3 mx-auto text-center'>
-            <h1 className="blackBlueText">The Shola Craft <span>Mechanism</span> - Our 5 Pillars of <span>Success</span></h1>
+            <h1 className="blackBlueText leading-none">The Shola Craft <span>Mechanism</span> - Our 5 Pillars of <span>Success</span></h1>
             <p className="blackOrangeText">Let us now take you through a quick tour of the <span>prolonged process</span> to give you a fair idea of our craft. With immense experience and utmost dedication, we not only bring out the best handicraft products, but also ensure that all our inquisitive audience are aware of this <span>interesting trivia.</span> Scroll down to get a quick glimpse of the process.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="hiw-sec2">
+      <section className={styles.hiwSec2}>
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-1'>
 
             </div>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-2'>
               <p className="process-step blue-btn">step 01</p>
               <h2>Extracting Shola stems</h2>
               <p>
@@ -36,13 +36,13 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section className='hiw-sec3'>
+      <section className={styles.hiwSec3}>
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-2'>
 
             </div>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-1'>
               <p className="process-step orange-btn">step 02</p>
               <h2>Building shola blocks</h2>
               <p>
@@ -56,13 +56,13 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section className='hiw-sec4'>
+      <section className={styles.hiwSec4}>
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-1'>
 
             </div>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-2'>
               <p className="process-step orange-btn">step 03</p>
               <h2>Designing the product</h2>
               <p>
@@ -79,13 +79,13 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section className='hiw-sec5'>
+      <section className={styles.hiwSec5}>
         <div className="baseContainer">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-2'>
 
             </div>
-            <div className='md:col-span-1'>
+            <div className='md:col-span-1 order-1'>
               <p className="process-step orange-btn">step 04</p>
               <h2>Packing all Finished Goods</h2>
               <p>
@@ -99,8 +99,8 @@ export default function HowWeWork() {
         </div>
       </section>
 
-      <section className="hiw-sec6">
-        <div className="baseContainer">
+      <section className={styles.hiwSec6}>
+        <div className="baseContainer text-center">
           <p className="process-step blue-btn">step 05</p>
           <h2>The final delivery</h2>
           <p>

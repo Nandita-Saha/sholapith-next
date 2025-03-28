@@ -30,12 +30,15 @@ export default function Header() {
   return (
 
     <>
-      <div className={`${styles.header} absolute top-0 z-50 px-4 py-3 flex w-full items-center justify-between`}>
+      <div className={`${styles.header} fixed top-0 z-50 px-4 py-3 flex w-full items-center justify-between`}>
         <Link href="/">
           <Image width="200" height="200" className="w-52 md:w-60 lg:w-72" src="/assets/images/headers/logo.svg" alt="logo" />
         </Link>
 
         <ul className="hidden lg:flex items-center justify-center">
+          <li className="text-center mx-5">
+            <Link className=" text-white" href="/">Home</Link>
+          </li>
           <li className="text-center mx-5">
             <Link className=" text-white" href="/about">About Us</Link>
           </li>
@@ -68,6 +71,9 @@ export default function Header() {
           } transition-transform duration-300 ease-in-out `}
       >
         <ul className="mt-[100px]">
+          <li className="text-center my-2">
+            <Link className="text-white hover:text-[#6cd4da]" href="/" onClick={() => toggleMenu("/")}>Home</Link>
+          </li>
           <li className="text-center my-2">
             <Link className="text-white hover:text-[#6cd4da]" href="/about" onClick={() => toggleMenu("/about")}>About Us</Link>
           </li>

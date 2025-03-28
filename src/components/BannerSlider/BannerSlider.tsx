@@ -49,15 +49,15 @@ export default function BannerSlider() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
-                <Image width="300" height="200" className="" src="/assets/images/home/slider-02.png" alt="" />
+                <Image width="300" height="200" className="" src="/assets/images/home/slider-03.png" alt="" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="">
-                <Image width="300" height="200" className="" src="/assets/images/home/slider-03.png" alt="" />
+                <Image width="300" height="200" className="" src="/assets/images/home/slider-02.png" alt="" />
             </div>
           </SwiperSlide>
-       
+             
 
 
 

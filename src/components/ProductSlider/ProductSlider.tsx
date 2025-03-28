@@ -7,58 +7,76 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Autoplay, Navigation } from 'swiper/modules';
+import styles from './productSlider.module.css'
 // import { sliders } from "@/configs/slider-config"
 
 export default function ProductSlider() {
   return (
     <div className=''>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={5}
         spaceBetween={0}
         navigation={true}
+        centeredSlides={true}
         // navigation={{
         //   prevEl: '.swiper-button-prev',
         //   nextEl: '.swiper-button-next',
         // }}
         loop={true}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 1000,
+        //   disableOnInteraction: false,
+        // }}
         breakpoints={{
           640: {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 3,
+            slidesPerView: 5,
             spaceBetween: 0,
           },
         }}
         modules={[Navigation]}
-        className="mySwiper"
+        className="prodSwiper"
       >
-          <SwiperSlide>
-            <div className="">
-                <Image width="300" height="200" className="" src="/assets/images/home/slider-01.png" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-                <Image width="300" height="200" className="" src="/assets/images/home/slider-02.png" alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-                <Image width="300" height="200" className="" src="/assets/images/home/slider-03.png" alt="" />
-            </div>
-          </SwiperSlide>
-       
-          {/* {sliders.map((slider) => (
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-1.webp" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-3.webp" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-2.webp" alt="" />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-4.webp" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-5.webp" alt="" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={styles.topProductItem}>
+            <Image width="300" height="200" className="" src="/assets/images/webp/top-product-6.webp" alt="" />
+          </div>
+        </SwiperSlide>
+
+        {/* {sliders.map((slider) => (
           <SwiperSlide key={slider.id}>
             <div className=''>
             <div className="featureBox relative">
